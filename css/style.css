@@ -15,10 +15,15 @@ img {
 
 .slide-wrapper {
     overflow: hidden;
+    padding: 10px;
 }
 
 .slide {
     display: flex;
+}
+
+.slide:hover{
+    will-change: transform;
 }
 
 .slide li {
@@ -26,4 +31,15 @@ img {
     width: 80vw;
     max-width: 800px;
     margin: 0 20px;
+    opacity: .8;
+    transform: scale(.8);
+    transition: .4s;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 4px 4px 4px rgba(0,0,0,.2);
+}
+
+.slide li.active {
+    opacity: 1;
+    transform:scale(1);
 }
